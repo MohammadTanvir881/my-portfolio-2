@@ -82,10 +82,14 @@ nav ul li a {
      margin-bottom: 6px;
 }
 
-.img1 {
+.img1  {
     padding-top: 10px;
-    margin-bottom: 0px
     
+    
+    
+}
+.img1 img {
+     vertical-align: middle;
 }
 
 .img1 img {
@@ -250,4 +254,68 @@ textarea {
 .width a {
      display: inline-block;
      padding: 0px 20px;
+}
+
+.hide {
+     display: none;
+}
+
+@media screen and (max-width:576px) {
+
+     .header {
+          background-image: none;
+     }
+     
+     nav {
+          flex-direction: column;
+          padding: 25px 15px 14px 15px;
+     }
+     nav ul {
+          margin-left: -45px;
+     }
+     .banner {
+          flex-direction: column;
+          padding: 15px 10px 15px 15px;
+     } 
+
+     .img1 {
+          margin-bottom: -15px;
+     }
+
+     .img1 img {
+          height: 426px;
+          /* height: 100%; */
+      }
+     
+     
+     .skills {
+          flex-direction: column;
+       }
+       .what-i-do {
+          padding: 20px;
+          margin: 10px auto;
+       }
+       .what-i-do p {
+          padding: 5px 10px 
+      ;
+      }
+      .shared-btn {
+          margin-top: 10px;
+      }
+      .resume {
+          flex-direction: column;
+      }
+      .my-info {
+          flex-direction: column;
+      }
+      .about {
+          padding: 15px;
+          margin-top: 15px;
+      }
+      footer {
+          flex-direction: column;
+      }
+      .width {
+          width: 80%;padding: 20px 30px 20px 40px;
+      }
 }
